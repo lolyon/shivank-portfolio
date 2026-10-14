@@ -129,7 +129,7 @@ body.detail-open .music-btn { background: rgba(255,255,255,.92); color: var(--in
 .guitar-r { right: clamp(1rem, 5vw, 6rem); bottom: -8vh; height: 84vh; transform: rotate(13deg); }
 .guitar-l { left: clamp(1rem, 5vw, 6rem); bottom: -12vh; height: 72vh; transform: rotate(-11deg); }
 .pluck-hint { position: absolute; z-index: 2; right: calc(clamp(1rem, 5vw, 6rem) + 2vh); top: 21vh; font-family: var(--font-mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.75); }
-@media (max-width: 1250px), (max-height: 600px) { .guitar, .pluck-hint { display: none; } }
+@media (max-width: 1125px), (max-height: 540px) { .guitar, .pluck-hint { display: none; } }
 
 /* ---------- 2) CURRENT ---------- */
 #current { text-align: left; }
