@@ -19,8 +19,11 @@ const SITE = {
 
   profileImage: "images/Profile.jpg",          // your circular photo
 
-  // Only the About page uses a photo. Every other page uses the animated space
-  // background (drawn by script.js, no image file needed).
+  // Small tags under your intro on the About page (edit or delete any of them)
+  interests: ["Robotics", "Guitar", "Photography"],
+
+  // Only the About page uses a photo. Every other page is plain.
+  // To give another page a photo, add a line here, e.g.  thanks: "images/my-pic.jpg"
   backgrounds: {
     hero: "images/JHE_Pic.jpg"
   },
@@ -71,7 +74,7 @@ const EXPERIENCES = [
       { src: "images/SentryRobot.jpg", caption: "RoboMaster Competition - North America" },
       { src: "images/logo_master.jpg", caption: "Robomaster Competition - China" }
     ],
-    video: { src: "videos/robomaster.mp4", caption: "Testing the scan function of the robot" },
+    video: { src: "Videos/robomaster.mp4", caption: "Testing the scan function of the robot" },
     skills: ["Teamwork", "Robotics", "C++", "Python", "Computer vision"]
   },
   { 
@@ -235,3 +238,25 @@ const AWARDS = [
     details: "Write about why you received this trophy." },
 
 ];
+
+/* ---------- PHOTOGRAPHY PAGE ----------
+   Put your photos in  images/photography/  and use those file names below.
+   (Until a file exists, a soft placeholder is shown.) */
+const PHOTOGRAPHY = {
+  url: "https://lolyon.github.io/shivank-photography/",
+  lead: "Toronto from the sidewalk: towers, airplanes and the odd flower, caught in passing light.",
+  paragraphs: [
+    "I photograph the city I walk through every day. Most frames start with looking up: a tower between two brick walls, a glass facade catching the last of the sun, a street still wet from rain.",
+    "I shoot handheld, favour natural light, and edit lightly so a place still looks like itself. Airplanes crossing a clean sky and a flower on the way home are just as welcome as the skyline. The full gallery lives on my photography website."
+  ],
+  facts: [
+    { label: "Based in", value: "Toronto, Ontario" },
+    { label: "Focus",    value: "Street & architecture" },
+    { label: "Style",    value: "Handheld, natural light" }
+  ],
+  tiles: [
+    { label: "Towers",    src: "images/photography/towers.jpg" },
+    { label: "Airplanes", src: "images/photography/airplanes.jpg" },
+    { label: "Flowers",   src: "images/photography/flowers.jpg" }
+  ]
+};

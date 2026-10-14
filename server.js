@@ -7,7 +7,8 @@ const path = require("path");
 const types = {
   ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".json": "application/json",
   ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp",
-  ".svg": "image/svg+xml", ".ico": "image/x-icon", ".mp4": "video/mp4"
+  ".svg": "image/svg+xml", ".ico": "image/x-icon", ".mp4": "video/mp4",
+  ".mp3": "audio/mpeg", ".pdf": "application/pdf", ".webm": "video/webm", ".woff2": "font/woff2"
 };
 
 http.createServer((req, res) => {

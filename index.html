@@ -6,71 +6,41 @@
   <title>Shivank Sunil Personal Website and Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="on-dark">
 
-  <audio id="bg-music" src="song1.mp3" loop></audio>
+  <audio id="bg-music" src="song1.mp3" loop preload="none"></audio>
 
-  <!-- Space background (all pages except About) -->
-  <canvas id="space" aria-hidden="true"></canvas>
+  <!-- Music button (top left). Music only plays when you press it. -->
+  <button class="music-btn" id="musicBtn" aria-label="Play music" title="Play music">
+    <svg class="i-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+    <svg class="i-play" viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>
+  </button>
 
-
-  <!-- OPENING INTRO -->
-<div class="intro" id="intro">
-  <div class="intro-video" id="introVideoWrap">
-    <video id="videoPlayer" class="intro-loop-video" src="Video1.mp4" playsinline preload="auto" muted></video>
-    <p class="intro-quote" id="introQuote"></p>
-  </div>
-
-  <!-- F1 car, top view, nose pointing right -->
-  <svg class="intro-car" id="introCar" viewBox="0 0 380 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <rect x="6" y="30" width="30" height="80" rx="4" fill="#161616"/>
-    <rect x="6" y="26" width="30" height="6" rx="2" fill="#7a003c"/>
-    <rect x="6" y="108" width="30" height="6" rx="2" fill="#7a003c"/>
-    <rect x="54" y="12" width="56" height="28" rx="8" fill="#111"/>
-    <rect x="54" y="100" width="56" height="28" rx="8" fill="#111"/>
-    <rect x="268" y="14" width="50" height="26" rx="8" fill="#111"/>
-    <rect x="268" y="100" width="50" height="26" rx="8" fill="#111"/>
-    <path d="M82 40 L90 60 M82 100 L90 80 M290 40 L286 62 M290 100 L286 78" stroke="#222" stroke-width="3" fill="none"/>
-    <rect x="340" y="20" width="26" height="100" rx="4" fill="#161616"/>
-    <rect x="338" y="16" width="30" height="6" rx="2" fill="#7a003c"/>
-    <rect x="338" y="118" width="30" height="6" rx="2" fill="#7a003c"/>
-    <path d="M34 62 L110 58 L150 46 L230 46 L262 56 L322 64 L352 66 L352 74 L322 76 L262 84 L230 94 L150 94 L110 82 L34 78 Z" fill="#7a003c"/>
-    <rect x="34" y="68" width="318" height="4" fill="#fdbf57"/>
-    <ellipse cx="170" cy="70" rx="14" ry="9" fill="#0f0f0f"/>
-    <ellipse cx="212" cy="70" rx="22" ry="10" fill="#0b0b0b"/>
-    <circle cx="214" cy="70" r="6.5" fill="#fdbf57"/>
-    <path d="M194 63 L232 70 L194 77" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
-  </svg>
-
-  <p class="intro-start" id="introStart">Click anywhere to start (sound on)</p>
-  <button class="intro-skip" id="introSkip">Skip intro</button>
-</div>
-
-<!-- Background song (hidden player) + music button (top left) -->
-<div class="song-player" aria-hidden="true"></div>
-<button class="music-btn" id="musicBtn" hidden aria-label="Pause music" title="Music">
-  <svg class="i-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-  <svg class="i-play" viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>
-</button>
-
-  <!-- TOP NAV -->
-  <header class="nav">
+  <!-- TOP NAV (the little car on the dashed road drives along as you move through the pages) -->
+  <header class="nav" id="nav">
     <a href="#about" class="nav-logo" id="navName">Your Name</a>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#awards">Awards</a>
+      <a href="#photography">Photography</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <div class="nav-road" aria-hidden="true"><div class="mini-car" id="miniCar"></div></div>
   </header>
 
   <main>
-    <!-- 1) HERO / ABOUT -->
+    <!-- 1) ABOUT (photo background) -->
     <section id="about" class="section hero" data-bg="hero">
       <div class="bg"></div>
+      <div class="guitar guitar-l" id="guitarL" aria-hidden="true"></div>
+      <div class="guitar guitar-r" id="guitarR" aria-hidden="true"></div>
+      <p class="pluck-hint" aria-hidden="true">hover or click the strings</p>
+
       <div class="inner hero-inner">
         <div class="profile" id="profilePic" role="img" aria-label="Profile photo"></div>
         <div class="hero-text">
@@ -84,6 +54,7 @@
             </a>
           </p>
           <p class="hero-intro" id="heroIntro"></p>
+          <ul class="interests" id="interests"></ul>
         </div>
       </div>
       <a href="#current" class="scroll-hint" aria-label="Scroll down">Learn more</a>
@@ -93,6 +64,7 @@
     <section id="current" class="section" data-bg="current">
       <div class="bg"></div>
       <div class="inner">
+        <p class="eyebrow">02 / Now</p>
         <h2 class="section-title">Currently</h2>
         <div class="wide-list" id="currentList"></div>
         <div class="current-documents">
@@ -111,14 +83,14 @@
           </div>
         </div>
       </div>
-      
     </section>
 
     <!-- 3) PROJECTS AND EXPERIENCES (sideways carousel) -->
     <section id="projects" class="section projects" data-bg="experience">
       <div class="bg"></div>
       <div class="inner">
-        <h2 class="section-title">Projects and Experiences</h2>
+        <p class="eyebrow">03 / Work</p>
+        <h2 class="section-title">Projects and <em>Experiences</em></h2>
 
         <!-- Scrolling the mouse wheel while the cursor is over this strip moves sideways -->
         <div class="h-region" id="hRegion" aria-label="Projects and experiences"></div>
@@ -136,6 +108,7 @@
     <section id="skills" class="section" data-bg="skills">
       <div class="bg"></div>
       <div class="inner skills-inner">
+        <p class="eyebrow">04 / Toolbox</p>
         <h2 class="section-title">Skills</h2>
 
         <div class="tools-block">
@@ -157,23 +130,47 @@
     <section id="awards" class="section" data-bg="awards">
       <div class="bg"></div>
       <div class="inner">
+        <p class="eyebrow">05 / Honours</p>
         <h2 class="section-title">Awards</h2>
         <div class="award-row" id="awardGrid"></div>
       </div>
     </section>
 
-    <!-- 6) THANK YOU / CONTACT -->
+    <!-- 6) PHOTOGRAPHY -->
+    <section id="photography" class="section photo" data-bg="photography">
+      <div class="bg"></div>
+      <div class="inner">
+        <p class="eyebrow">06 / Behind the lens</p>
+        <h2 class="section-title" id="photoTitle">Photography</h2>
+        <div class="photo-grid">
+          <div class="photo-copy">
+            <p class="photo-lead" id="photoLead"></p>
+            <div class="photo-text" id="photoText"></div>
+            <dl class="facts" id="photoFacts"></dl>
+            <a class="btn" id="photoLink" href="#" target="_blank" rel="noopener">Visit my photography website <span>↗</span></a>
+          </div>
+          <div class="photo-tiles" id="photoTiles"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) THANK YOU / CONTACT (a car drives in on the road at the bottom) -->
     <section id="contact" class="section thanks" data-bg="thanks">
       <div class="bg"></div>
       <div class="inner">
+        <p class="eyebrow">07 / Hello</p>
         <h2 class="thanks-title" id="thanksTitle"></h2>
         <p class="thanks-text" id="thanksText"></p>
         <div class="contact-row" id="contactRow"></div>
       </div>
+      <div class="scene" aria-hidden="true">
+        <div class="scene-car" id="sceneCar" title="Click me"></div>
+        <div class="road"></div>
+      </div>
     </section>
   </main>
 
-  <!-- DETAIL "PAGE" (opens when you click an experience / award / skill) -->
+  <!-- DETAIL "PAGE" (opens when you click an experience / award / document) -->
   <div class="detail" id="detail" aria-hidden="true">
     <div class="bg"></div>
     <div class="detail-scroll">
