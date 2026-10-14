@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5c9cf5"/><stop offset="1" stop-color="#00589c"/></linearGradient></defs>
+  <path fill="url(#g)" d="M64 6l50 29v58l-50 29-50-29V35z"/>
+  <path fill="#fff" fill-opacity=".14" d="M64 6l50 29-50 29-50-29z"/>
+  <text x="64" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="27" fill="#fff">C/C++</text>
+</svg>
