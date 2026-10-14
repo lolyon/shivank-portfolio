@@ -130,7 +130,7 @@ const EXPERIENCES = [
     role: "Developer",
     date: "September 2025 – December 2025",
     short: "Developing a multi-game application for educational purposes.",
-    cover: "images/exp-python-games.jpg",
+    cover: "images/test1.jpg",
     description: "Modulated a Python-based application featuring 3 interactive games by applying functions, loops, conditional logic, randomization, and state management to implement game mechanics and scoring systems.",
     did: ["Developed the application from concept to completion.", "Learnt and applied Python programming concepts to implement game mechanics and scoring systems.", "Tested the application and gathered feedback to improve the user experience."],
     images: [
@@ -145,7 +145,7 @@ const EXPERIENCES = [
     role: "Team member",
     date: "Dates here",
     short: "Tech team supporting school events and systems.",
-    cover: "images/exp-tigertech.jpg",
+    cover: "images/test1.jpg",
     description: "Write what Tiger Tech does and your part in it.",
     did: ["Replace me", "Replace me"],
     images: [
@@ -161,7 +161,7 @@ const EXPERIENCES = [
     role: "Researcher",
     date: "March 2025 – June 2025",
     short: "Research the Relationship of books.",
-    cover: "images/exp-library.jpg",
+    cover: "images/test1.jpg",
     description: "Analysed a 1,000-book dataset in Excel to identify relationships between publication year and book thickness, synthesized findings into analytical insights, and presented results using PowerPoint. ",
     did: ["Analysed a 1,000-book dataset in Excel to identify relationships between publication year and book thickness.", "Synthesized findings into analytical insights.", "Presented results using PowerPoint."],
     images: [
@@ -177,7 +177,7 @@ const EXPERIENCES = [
     role: "Coming soon",
     date: "Dates here",
     short: "Something new is on the way.",
-    cover: "images/exp-more.jpg",
+    cover: "images/test1.jpg",
     description: "Replace this with your 8th experience (internship, project, volunteering...).",
     did: ["Replace me"],
     images: [{ src: "images/more-1.jpg", caption: "Add a caption" }],
@@ -255,8 +255,8 @@ const PHOTOGRAPHY = {
     { label: "Style",    value: "Handheld, natural light" }
   ],
   tiles: [
-    { label: "Towers",    src: "images/photography/towers.jpg" },
-    { label: "Airplanes", src: "images/photography/airplanes.jpg" },
-    { label: "Flowers",   src: "images/photography/flowers.jpg" }
+    { label: "CN Tower",    src: "images/photo-10.jpg" },
+    { label: "Airplanes", src: "images/photo-25.jpg" },
+    { label: "Flowers",   src: "images/photo-02.jpg" }
   ]
 };
