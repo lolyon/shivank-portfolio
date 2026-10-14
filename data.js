@@ -47,7 +47,7 @@ const SITE = {
       { label: "Email 1",    value: "shivanksunil@gmail.com",              href: "mailto:shivanksunil@gmail.com" },
       { label: "Email 2",    value: "nambis2@mcmaster.ca",              href: "mailto:nambis2@mcmaster.ca" },
       { label: "LinkedIn", value: "linkedin.com/in/shivank-sunil-nambiar", href: "https://www.linkedin.com/in/shivank-sunil/?isSelfProfile=true" },
-      { label: "GitHub",   value: "github.com/your-username",     href: "https://github.com/your-username" }
+      { label: "GitHub",   value: "github.com/your-username",     href: "https://github.com/lolyon" }
     ]
   }
 };
