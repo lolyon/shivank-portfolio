@@ -345,9 +345,9 @@ body.detail-open .music-btn { background: rgba(255,255,255,.92); color: var(--in
 .skills-learned { background: #f8f6f1; border: 1px solid var(--line); border-radius: 1rem; padding: 1.4rem 1.6rem; margin-top: 2rem; }
 .skills-learned h2 { margin-top: 0; }
 .project-report { margin: 2rem 0; }
-.award-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
-.award-gallery figure { min-width: 0; }
-.award-detail-shot { width: 100%; aspect-ratio: 4 / 3; border-radius: .8rem; background-position: center; background-repeat: no-repeat; background-color: #e7e3da; }
+.award-gallery { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1rem; margin: 1.5rem 0 2rem; }
+.award-gallery figure { margin: 0; flex: 0 1 28rem; min-width: 0; max-width: 100%; text-align: center; }
+.award-detail-shot { display: block; width: 100%; height: auto; max-height: 32rem; object-fit: contain; margin: 0 auto; border-radius: .8rem; background-color: #e7e3da; }
 .award-gallery figcaption { margin-top: .5rem; color: var(--muted); font-size: .85rem; text-align: center; }
 .pdf-frame-wrap { width: 100%; height: min(72vh, 900px); min-height: 480px; background: #fff; border: 1px solid var(--line); border-radius: .8rem; overflow: hidden; margin: 1.25rem 0; }
 .pdf-frame { width: 100%; height: 100%; border: 0; background: #fff; }
@@ -383,7 +383,7 @@ body.detail-open .music-btn { background: rgba(255,255,255,.92); color: var(--in
   .document-card { max-width: none; width: 100%; }
   .wide-card { grid-template-columns: 1fr; }
 }
-@media (max-width: 650px) { .award-gallery { grid-template-columns: 1fr; } }
+@media (max-width: 650px) { .award-gallery figure { flex-basis: 100%; } }
 @media (max-width: 480px) { .soft-grid { grid-template-columns: 1fr; } }
 
 @media (prefers-reduced-motion: reduce) {

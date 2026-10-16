@@ -186,7 +186,7 @@ function renderDetail(route) {
     detailInner.innerHTML = `${back}
       <h1>${a.title}</h1>
       <p class="meta">${a.org} · ${a.date}</p>
-      <div class="award-gallery">${[a.image, ...(a.images || [])].map((src, i) => `<figure><div class="award-detail-shot" style="${awardStyle(src)}"></div><figcaption>${i === 0 ? "Award photo" : "Additional photo"}</figcaption></figure>`).join("")}</div>
+      <div class="award-gallery">${[a.image, ...(a.images || [])].map((src, i) => `<figure><img class="award-detail-shot" src="${src}" alt="${a.title}" onerror="this.closest('figure').remove()"><figcaption>${i === 0 ? "Award photo" : "Additional photo"}</figcaption></figure>`).join("")}</div>
       <p>${a.details}</p>`;
     return true;
   }
