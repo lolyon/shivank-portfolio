@@ -162,8 +162,8 @@ const AWARDS = [
     image: "images/award1.jpg", short: "Awarded on admission to McMaster University.",
     details: "My commitment to academic excellence is reflected in receiving the McMaster Entrance Award scholarship, earned by achieving a near-perfect 98.2% overall average. Driven by a 99% standing in advanced mathematics and science, this achievement underscores my strong analytical capabilities, dedication to mastering complex concepts, and proven track record of top-tier performance." },
   { id: "HarbordScholarship", title: "Harbord Wolfsted Award Scholarship", date: "2025", org: "Harbord Collegiate Institute",
-    image: "images/award5.jpg", short: "Selected to lead as parade marshal.",
-    details: "Write about the event and your responsibilities." },
+    image: "images/award5.jpg", short: "Awarded for academic excellence at Harbord Collegiate Institute.",
+    details: "Honored to share that I have received the Lily Wolfstod Rebick Award for Academic Excellence from Harbord Collegiate Institute! This award recognizes high academic achievement and dedication to scholastic excellence. I’m deeply grateful to my teachers, peers, and mentors who supported me along the way, and I look forward to carrying this momentum into my continued studies in engineering and design!" },
   { id: "broadridge", title: "Broadridge Canada Scholarship", date: "2025-2029", org: "Broadridge Canada",
     image: "images/award2.jpg", short: "Scholarship from Broadridge Canada.",
     details: "My dedication to both academic excellence and community impact is demonstrated through earning the McMaster Entrance Award for a 98.2% overall average—driven by 99% standing in math and science—as well as the Broadridge Canada Scholarship. Supported by exceptional teacher endorsements, the Broadridge scholarship recognizes my leadership and community engagement in mentoring others through math tutoring and coaching badminton, reflecting my commitment to bringing drive, accountability, and strong interpersonal skills to the workplace." },
@@ -172,11 +172,11 @@ const AWARDS = [
     details: "Beyond my scholastic honors, I demonstrate strong drive and adaptability through competitive athletics. Most recently, I secured 2nd place in the intramural badminton championship despite facing a high-caliber bracket that included provincial and national players. This tournament provided an incredible opportunity to challenge myself against elite competition, learn from experienced peers, and foster meaningful connections within the athletic community." },
   { id: "tdssa", title: "TDSSA Badminton — 2nd Place, Championship", date: "2025", org: "TDSSA",
     image: "images/award4.jpg", images: ["images/tdssa2.jpg"], // add your second TDSSA photo as images/tdssa2.jpg
- short: "Runner-up at the TDSSA badminton championship.",
+    short: "Runner-up at the TDSSA badminton championship.",
     details: "My commitment to athletic and personal excellence is demonstrated through a strong track record in competitive sports. Building on my high school achievement as Runner-up at the TDSSA Badminton Championship, I continued competing at a high level at McMaster, placing 2nd in the university intramural tournament against provincial and national-caliber athletes. These experiences have instilled in me deep strategic discipline, composure under pressure, and a passion for continuous skill development." },
-  { id: "championship-trophy", title: "Championship Trophy", date: "Year", org: "School",
+  { id: "championship-trophy", title: "Championship Trophy", date: "2023", org: "School",
     image: "images/championship.jpg", images: ["images/championship1.jpg"], short: "Beyond quantitative rigor, my leadership capabilities are grounded in executive student governance. As elected High School Captain (2022–23) and recognized as the Best Member of the Student Council, I directed school-wide strategy that led our team to top the charts across all evaluated categories—academic performance, sports, and overall discipline. From commanding the Independence Day Parade to fostering school spirit and cross-functional accountability, I have consistently driven teams toward top-tier performance.",
-    details: "Write about why you received this trophy." },
+    details: "Beyond quantitative rigor, my leadership capabilities are grounded in executive student governance. As elected High School Captain (2022–23) and recognized as the Best Member of the Student Council, I directed school-wide strategy that led our team to top the charts across all evaluated categories—academic performance, sports, and overall discipline. From commanding the Independence Day Parade to fostering school spirit and cross-functional accountability, I have consistently driven teams toward top-tier performance." },
 
 ];
 
