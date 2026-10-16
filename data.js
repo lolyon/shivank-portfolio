@@ -50,7 +50,7 @@ const SITE = {
       { label: "Email 1",    value: "shivanksunil@gmail.com",              href: "mailto:shivanksunil@gmail.com" },
       { label: "Email 2",    value: "nambis2@mcmaster.ca",              href: "mailto:nambis2@mcmaster.ca" },
       { label: "LinkedIn", value: "linkedin.com/in/shivank-sunil-nambiar", href: "https://www.linkedin.com/in/shivank-sunil/?isSelfProfile=true" },
-      { label: "GitHub",   value: "github.com/your-username",     href: "https://github.com/lolyon" }
+      { label: "GitHub",   value: "github.com/lolyon",     href: "https://github.com/lolyon" }
     ]
   }
 };
@@ -123,65 +123,6 @@ const EXPERIENCES = [
       { src: "images/p3image1.jpg", caption: "Book/iPad Holder for the Foldable Desk" }
     ],
     skills: ["Collaboration", "Event planning", "CAD", "Prototyping", "User testing", "Research"]
-  },
-  {
-    id: "python_games",
-    title: "Multi-Game Application",
-    role: "Developer",
-    date: "September 2025 – December 2025",
-    short: "Developing a multi-game application for educational purposes.",
-    cover: "images/test1.jpg",
-    description: "Modulated a Python-based application featuring 3 interactive games by applying functions, loops, conditional logic, randomization, and state management to implement game mechanics and scoring systems.",
-    did: ["Developed the application from concept to completion.", "Learnt and applied Python programming concepts to implement game mechanics and scoring systems.", "Tested the application and gathered feedback to improve the user experience."],
-    images: [
-      { src: "images/python-games-1.jpg", caption: "Add a caption" },
-      { src: "images/python-games-2.jpg", caption: "Add a caption" }
-    ],
-    skills: ["Developing", "Lesson planning", "Strategic thinking", "Python", "Problem-solving"]
-  },
-  {
-    id: "tigertech",
-    title: "Tiger Tech Team",
-    role: "Team member",
-    date: "Dates here",
-    short: "Tech team supporting school events and systems.",
-    cover: "images/test1.jpg",
-    description: "Write what Tiger Tech does and your part in it.",
-    did: ["Replace me", "Replace me"],
-    images: [
-      { src: "images/tigertech-1.jpg", caption: "Add a caption" },
-      { src: "images/tigertech-2.jpg", caption: "Add a caption" }
-    ],
-    skills: ["Troubleshooting", "A/V setup", "Teamwork"]
-    
-  },
-  {
-    id: "library",
-    title: "Book Research",
-    role: "Researcher",
-    date: "March 2025 – June 2025",
-    short: "Research the Relationship of books.",
-    cover: "images/test1.jpg",
-    description: "Analysed a 1,000-book dataset in Excel to identify relationships between publication year and book thickness, synthesized findings into analytical insights, and presented results using PowerPoint. ",
-    did: ["Analysed a 1,000-book dataset in Excel to identify relationships between publication year and book thickness.", "Synthesized findings into analytical insights.", "Presented results using PowerPoint."],
-    images: [
-      { src: "images/library-1.jpg", caption: "Add a caption" },
-      { src: "images/library-2.jpg", caption: "Add a caption" }
-    ],
-    skills: ["Organization", "Responsibility", "Excel", "PowerPoint", "Data analysis"]
-  },
-  {
-    // 8th slot so the grid is a full 4 x 2. Replace it with a real experience, or delete it.
-    id: "more",
-    title: "Next experience",
-    role: "Coming soon",
-    date: "Dates here",
-    short: "Something new is on the way.",
-    cover: "images/test1.jpg",
-    description: "Replace this with your 8th experience (internship, project, volunteering...).",
-    did: ["Replace me"],
-    images: [{ src: "images/more-1.jpg", caption: "Add a caption" }],
-    skills: ["Add skills here"]
   }
 ];
 
