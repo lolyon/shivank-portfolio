@@ -84,14 +84,29 @@ const EXPERIENCES = [
     date: "September 2025 – December 2025",
     short: "Designed an Interface.",
     cover: "images/QArm.jpg",
-    description: "Designed and programmed a robotic arm to pick and place customer-selected objects using an end-effector, incorporating user authentication, barcode-based ordering, object retrieval, basket placement, and automated receipt printing. Project modulated with 5 students and duration of 8 weeks.",
-    did: ["Created a user-friendly interface for the robotic   arm. ","Created an end-effector for the robotic arm.","Created a database to store user information and preferences.", "Tested the interface with users and gathered feedback to refine the design."],
+    description: "During my time at university, I worked with a team of five students over eight weeks to design and build an automated robotic retail system. I designed the end-effector in Autodesk Inventor and programmed the robotic arm to pick and place customer-selected items. The system covered the full customer journey: user authentication, barcode-based ordering, object retrieval, basket placement, and automated receipt printing.<br>The project taught me how to bring mechanical design, software, and hardware integration together into one working product. Because we split the system into modules, I learned to coordinate with teammates, define clear interfaces between components, and keep to a tight deadline. I’m excited to bring this combination of hands-on engineering and collaborative problem-solving as a studyexpert.",
+    did: ["Created a user-friendly interface for the robotic   arm. ","Created an end-effector for the robotic arm.","Created a database to store user information and preferences.", "Tested the interface with users and gathered feedback to refine the design.", "Used Autodesk Inventor to design the end-effector for the robotic arm."],
     images: [
       { src: "images/QArm(1).jpg", caption: "Robotic Q-Arm" },
       { src: "images/endeffector.jpg", caption: "End-Effector of the Robotic Arm" }
     ],
     report: "images/q-arm-report.pdf", // add your report PDF to images/ using this filename
     skills: ["Communication", "Python", "Microsoft Excel", "Database Management", "CAD", "Teamwork" , "Research"]
+  }, 
+  {
+    id: "F1_Car",
+    title: "F1 Car Design",
+    role: "Design Engineer",
+    date: "September 2025 – December 2025",
+    short: "Designed and tested an F1 car prototype.",
+    cover: "images/f1car.jpg",
+    description: "This project sparked a genuine passion for CAD and product design. Working in Autodesk Inventor, I learned to model gears, apply the dimensional constraints needed for 3D printing, and translate an idea in my head into a precise, buildable part. That process of seeing a concept take shape on screen and then in my hands is what I enjoy most about engineering. Eager to keep developing these skills, I spent my winter break designing and building a model of an F1 car, a goal I had held since childhood. Applying what I had learned to a project of my own choosing showed me how much I enjoy design work and made me want to pursue it further in a professional setting.",
+    did: ["Designed and tested an F1 car prototype.", "Created detailed CAD models using Autodesk Inventor.", "Presented the design to peers and faculty for feedback."],
+    images: [
+      { src: "images/f1car.jpg", caption: "F1 Car Prototype" },
+      { src: "images/f1car2.jpg", caption: "Inspired design" }
+    ],
+    skills: ["Research", "Analysis", "Design`", "Autodesk Inventor" , "Presentation"]
   },
   {
     id: "Waste_Water_Treatment_Plant",
@@ -123,7 +138,7 @@ const EXPERIENCES = [
       { src: "images/p3image1.jpg", caption: "Book/iPad Holder for the Foldable Desk" }
     ],
     skills: ["Collaboration", "Event planning", "CAD", "Prototyping", "User testing", "Research"]
-  }
+  }  
 ];
 
 /* ---------- PAGE 4: SKILLS ----------
