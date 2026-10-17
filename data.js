@@ -91,7 +91,7 @@ const EXPERIENCES = [
       { src: "images/endeffector.jpg", caption: "End-Effector of the Robotic Arm" }
     ],
     report: "images/q-arm-report.pdf", // add your report PDF to images/ using this filename
-    skills: ["Communication", "Python", "Microsoft Excel", "Database Management", "CAD", "Teamwork" , "Research"]
+    skills: ["Communication", "Python", "Microsoft Excel", "Database Management", "CAD", "Teamwork" , "Research", "Problem-solving"]
   }, 
   {
     id: "F1_Car",
