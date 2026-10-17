@@ -106,7 +106,7 @@ const EXPERIENCES = [
       { src: "images/f1car.jpg", caption: "F1 Car Prototype" },
       { src: "images/f1car2.jpg", caption: "Inspired design" }
     ],
-    skills: ["Research", "Analysis", "Design`", "Autodesk Inventor" , "Presentation"]
+    skills: ["Research", "Analysis", "Design`", "Autodesk Inventor" , "Presentation", "Problem Solving"]
   },
   {
     id: "Waste_Water_Treatment_Plant",
@@ -122,7 +122,7 @@ const EXPERIENCES = [
       { src: "images/waste2.jpg", caption: "Properties chart we created to decide on materials" }
     ],
     report: "images/wastewater-report.pdf", // add your report PDF to images/ using this filename
-    skills: ["Research", "Analysis", "Report Writing" ,"Teamwork", "Presentation"]
+    skills: ["Research", "Analysis", "Report Writing" ,"Teamwork", "Presentation","Problem Solving"]
   },
   {
     id: "Foldable_Desk",
@@ -137,7 +137,7 @@ const EXPERIENCES = [
       { src: "images/p3image3.jpg", caption: "Foldable Desk Test on a Chair with the same dimensions as the wheelchair" },
       { src: "images/p3image1.jpg", caption: "Book/iPad Holder for the Foldable Desk" }
     ],
-    skills: ["Collaboration", "Event planning", "CAD", "Prototyping", "User testing", "Research"]
+    skills: ["Collaboration", "Event planning", "CAD", "Prototyping", "User testing", "Research", "Problem Solving"]
   }  
 ];
 
